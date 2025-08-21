@@ -1,0 +1,95 @@
+/* .locationMenu{
+} */
+.loc-menu{
+    display: block;
+    height: 218px;
+    width: 100%;
+    max-height: 682px;
+    transform: translate3d(0px, 0px, 0px);
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+    background: #fff;
+
+}
+.loc-head{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 8px;
+    margin-inline: 16px;
+    margin-bottom: 8px;
+    z-index: 99999;
+}
+.prof-logo{
+    width: 24px;
+    height: 24px;
+}
+.logoP{
+    width: 100%;
+    height: 100%;
+}
+.loc-txt{
+    color: rgb(42, 85, 229);
+    margin-left: 12px;
+    font-size: 14px;
+    font-family: var(--int-semi);
+    letter-spacing: -0.01px;
+    line-height: 20px;
+}
+.line{
+    height: 1px;
+    background: rgb(234, 234, 234);
+}
+.pinBox{
+    display: flex;
+    padding: 16px;
+}
+.pin-txt{
+    font-size: 16px;
+    font-family: Roboto medium;
+    padding: 16px;
+}
+.pincode{
+    --placeholderTextColor: #c2c2c2;
+    background: 0 0;
+    outline: 0;
+    border-width: 0;
+    border-color: rgb(135, 135, 135);
+    border-bottom-width: 1px;
+    font-family: var(--robo-reg);
+    width: 100%;
+    font-size: 14px;
+    color: #c2c2c2;
+}
+.sub-btn{
+    background-color: rgba(194, 194, 194, 1);
+    margin-left: 16px;
+    padding: 8px 16px;
+    align-self: center;
+    box-shadow: 1px 1px 1px rgba(169,169,169,0.60);
+    border: 0.5px solid rgba(194, 194, 194, 1);
+    border-radius: 2px;
+}
+.submit{
+    color: rgba(255, 255, 255, 1);
+    font-family: sans-serif-medium;
+    letter-spacing: 0;
+    font-size: 14px;
+    background: transparent;
+}
+.blck-bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, .6);
+    opacity: 0;
+    will-change: opacity;
+    z-index: 99;
+}
+.loc-foot{
+    display: flex;
+    align-items: center;
+    margin: 16px 16px 20px;
+}

@@ -1,0 +1,108 @@
+.menuBar{
+    width: 100%;
+}
+.mmm{
+    /* visibility: visible; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, .6);
+    opacity: 0;
+    will-change: opacity;
+    z-index: 9999;
+}
+.main{
+    /* visibility: visible; */
+    transform: translate3d(0px, 0px, 0px);
+    background: #fff;
+    position: fixed;
+    width: 75%;
+    height: 120%;
+    will-change: transform;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 0 8px 1px rgba(0,0,0,.4);
+    z-index: 9999;
+}
+.menu-head{
+    height: 60px;
+    padding: 2px 0;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(30deg, #2874f0, #0065c5);
+}
+.table{
+    table-layout: fixed;
+    width: 100%;
+    font-size: 12px;
+}
+.login-signup{
+    display: flex;
+    align-items: center;
+}
+.login-prof{
+    margin-left: 12px;
+    height: 15px;
+    width: 15px;
+}
+.log-sign{
+    width: 75%;
+    margin-left: 20px;
+    font-family: var(--int-reg);
+    font-size: 16px;
+    color: #fff;
+    margin-top: 1px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    align-self: flex-end;
+    white-space: nowrap;
+    background: transparent;
+}
+.f-logo{
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 15px;
+    overflow: clip;
+}
+
+
+.menu-imgs{
+    width: 14px;
+    height: 14px;
+    margin: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: inherit;
+    min-height: inherit;
+    position: relative;
+}
+.menu-img{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    opacity: 1;
+    transition: opacity .3s linear;
+}
+.menu-txt{
+    margin-left: 12px;
+}
+.zone{
+    height: 35px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    font-family: var(--int-reg);
+    font-size: 14px;
+    color: #353535;
+}
+.sp-zone{
+    display: flex;
+    align-items: center;
+}
+.menu-line{
+    width: 100%;
+    height: 1px;
+    background-color: #e0e0e0;
+}

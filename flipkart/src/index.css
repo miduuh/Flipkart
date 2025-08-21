@@ -1,0 +1,46 @@
+:root {
+  --int-reg: inter-regular;
+  --int-semi: inter-semiBold;
+  --robo-med: roboto-medium;
+  --robo-reg: roboto-regular;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button{
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+li{
+  list-style: none;
+}
+@font-face {
+  font-family: inter-regular;
+  src: url(assets/fonts/Inter-Regular.woff2);
+}
+@font-face {
+  font-family: inter-semiBold;
+  src: url(assets/fonts/Inter-SemiBold.woff2);
+}
+@font-face {
+  font-family: roboto-medium;
+  src: url(assets/fonts/roboto-medium.woff2);
+}
+@font-face {
+  font-family: roboto-regular;
+  src: url(assets/fonts/roboto-regular.woff2);
+}

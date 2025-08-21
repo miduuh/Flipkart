@@ -1,0 +1,40 @@
+{
+    "slides": [
+        {
+            "src": "src/assets/BannerProducts/Product0.webp",
+            "alt": "Image 0"
+        },
+        {
+            "src": "src/assets/BannerProducts/Product1.webp",
+            "alt": "Image 1"
+        },
+        {
+            "src": "src/assets/BannerProducts/Product2.webp",
+            "alt": "Image 2"
+        },
+        {
+            "src": "src/assets/BannerProducts/Product3.webp",
+            "alt": "Image 3"
+        },
+        {
+            "src": "src/assets/BannerProducts/Product4.webp",
+            "alt": "Image 4"
+        },
+        {
+            "src": "src/assets/BannerProducts/Product5.webp",
+            "alt": "Image 5"
+        },
+        {
+            "src": "src/assets/BannerProducts/Product6.webp",
+            "alt": "Image 6"
+        },
+        {
+            "src": "src/assets/BannerProducts/Product7.webp",
+            "alt": "Image 7"
+        },
+        {
+            "src": "src/assets/BannerProducts/Product8.webp",
+            "alt": "Image 8"
+        }
+    ]
+}

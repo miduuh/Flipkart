@@ -1,0 +1,293 @@
+@media screen and (min-width:766px) {
+    .fkrt-logo-mbl{
+        display: none;
+    }
+    .header-logo{
+        padding-top: 0 !important;
+    }
+    .fkheaderlogo{
+        padding-top: 0 !important;
+        margin-right: 76px !important;
+    }
+}
+@media screen and (max-width:766px){
+    .fkrt-logo{
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .header{
+        max-width: 480px !important;
+        height: 48px !important;
+        padding: 8px 16px !important;
+    }
+    .searchbar{
+        display: none !important;
+    }
+    .drpdwn-arw{
+        display: none;
+    }
+    .store-lnk{
+        display: none !important;
+    }
+    .cart{
+    margin-left: 12px;
+    }
+    .login{
+    margin-left: 12px;
+    }
+    .login-txt{
+    margin-left: 4px;
+    }
+    .cart-txt{
+        display: none !important;
+    }
+    .padd-inl{
+        padding: 0 !important;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .menu{
+        display: none;
+    }
+    .install{
+        display: none !important;
+    }
+    .login-main{
+    padding: 8px;
+    }
+    .header-logo{
+        flex-grow: 1;
+    }
+    .store{
+    margin-right: 8px;
+    }
+    .address{
+        display: none;
+    }
+    .searchbox{
+        display: none;
+    }
+    .login-hover:hover {
+    background-color: #2a55e5;
+    border-radius: 8px;
+    -webkit-text-fill-color: #fff;
+    }
+    .login-hover:hover .drpdwn-arw{
+        filter: invert(100%) hue-rotate(132deg) sepia(69%) saturate(0) brightness(114%) contrast(101%);
+        transform: rotate(180deg);
+        transition: transform .3s ease-in-out;
+    }
+    .login-hover:hover .login2{
+        filter: invert(100%) hue-rotate(132deg) sepia(69%) saturate(0) brightness(114%) contrast(101%);
+
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1191px){
+    .padd-inl{
+        padding: 0 6px !important;
+    }
+    .header{
+        padding: 12px !important;
+        max-width: 996px !important;
+    }
+    .cart-txt{
+        display: none !important;
+    }
+}
+
+.head{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 90;
+    position: relative;
+}
+.header{
+    display: flex;
+    align-items: center;
+    padding: 12px 28px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 67px;
+    max-width: 1600px;
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    margin-right: 12px;
+}
+.mmenu{
+    width: 24px;
+    height: 24px;
+    aspect-ratio: auto 24/24;
+}
+.fkheaderlogo{
+    max-width: 120px;
+    padding-top: 2px;
+    margin-right: 0;
+}
+.fkrt-logo-mbl{
+    width: 160px;
+    height: 40px;
+    aspect-ratio: auto 160/40;
+}
+.fkrt-logo{
+    width: 160px;
+    height: 40px;
+    aspect-ratio: auto 160/40;
+}
+.header-icons{
+    display: flex;
+    font-family: var(--int-reg);
+    align-items: center;
+    position: relative;
+}
+.searchbar{
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #f0f5ff;
+    min-width: 200px;
+    position: relative;
+    width: 100%;
+}
+.srchbar{
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+}
+.srch-btn{
+    padding: 8px 8px 8px 12px;
+    height: 40px;
+}
+.srch{
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+    height: 40px;
+}
+.srch-txt{
+    font-size: 17px;
+    font-family: var(--int-reg);
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    width: 100%;
+}
+.srch-txt:placeholder-shown{
+    text-overflow: ellipsis;
+}
+.install{
+    margin-left: 12px;
+    display: flex;
+}
+
+.login-main{
+    display: flex;
+    align-items: center;
+}
+.login-txt{
+    background: transparent;
+}
+.login{
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    align-items: center;
+}
+.login2{
+    height: 24px;
+    width: 24px;
+}
+
+.drpdwn-arw{
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+}
+.cart{
+    display: flex;
+}
+.cart-txt{
+    color: #000;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.padd-inl{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.store-lnk{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.address{
+    margin-bottom: 4px;
+}
+.add-loc{
+    display: flex;
+    align-items: center;
+    padding: 4px 16px 0;
+}
+.location{
+    display: flex;
+    align-items: center;
+}
+.loc{
+    color: rgb(31, 31, 31);
+    font-family: var(--int-semi);
+    margin-left: 4px;
+    font-size: 12px; 
+    line-height: 18px;
+}
+.del{
+    color: rgb(42, 85, 229);
+    font-family: var(--int-semi);
+    font-size: 12px;
+    margin-left: 6px;
+    line-height: 18px;
+}
+
+.searchbox{
+    padding: 12px 16px;
+    top: -1px;
+}
+.srchbx-padd{
+    border: 1.6px solid #ebebeb;
+    border-radius: 12px;    
+}
+.srch-txt-logo{
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 0 4px 0 12px;
+    font-family: var(--int-reg);
+    font-size: 14px;
+}
+.srchbox-txt{
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    min-height: 30px;
+}

@@ -1,0 +1,10 @@
+@media screen and (min-width: 768px) {
+    .body{
+        margin-inline: 16px;
+        margin-top: 8px;
+    }    
+}
+.body{
+    background-color: transparent;
+    max-width: 1600px;
+}

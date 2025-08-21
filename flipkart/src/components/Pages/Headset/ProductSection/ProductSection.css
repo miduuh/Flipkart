@@ -1,0 +1,74 @@
+.sponsored{
+    color: rgba(184, 187, 191, 1);
+    font-size: 10px;
+    line-height: 16px;
+    font-family: var(--int-reg);
+    letter-spacing: 0,01px;
+}
+.headset-name{
+    color: rgba(17, 17, 18, 1);
+    font-size: 14px;
+    line-height: 20px;
+    font-family: var(--int-semi);
+    letter-spacing: -0.01px;
+    height: 18px;
+    margin-right: 6px;
+}
+.headset-description{
+    color: rgba(113, 116, 120, 1);
+    font-size: 12px;
+    line-height: 18px;
+    font-family: var(--int-reg);
+    letter-spacing: 0;
+    margin-right: 10px;
+    padding-right: 8px;
+    padding-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.prices{
+    display: flex;
+    font-family: var(--int-semi);
+    line-height: 20px;
+    font-size: 14px;
+}
+.discount-percentage{
+    display: flex;
+    align-items: center;
+    color: rgba(0, 140, 0, 1);
+    margin-right: 4px;
+}
+.actual-price{
+    color: rgba(113, 116, 120, 1);
+    text-decoration: line-through;
+    margin-right: 4px;
+}
+.wow-offer{
+    display: flex;
+    font-size: 12px;
+    color: rgba(6, 31, 128, 1);
+    margin-top: 6px;
+}
+.wow{
+    height: 16px;
+    width: 38px;
+    margin-right: 2px;
+}
+.rating{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.canvas-div{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 2px;
+    margin-top: 2px;
+}
+.canvas{
+    transform: scale(0.8);
+    height: 12px;
+    width: 12px;
+    margin-right: 4px;
+}

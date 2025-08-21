@@ -1,0 +1,36 @@
+.headset-head{
+    min-height: 52px;
+    display: table;
+}
+.back-arrow{
+    min-width: 42px;
+    vertical-align: middle;
+    text-align: center;
+    max-height: 16px;
+    line-height: 10px;
+    display: table-cell;
+}
+.logo{
+    width: 23px;
+    height: 28px;
+    line-height: 10px;
+    padding-top: 2px;
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+.h1-div{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 12px;
+    text-align: left;
+    width: 100%;
+}
+.h1{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--robo-reg);
+}
+.headset-login{
+    min-width: 90px;
+}

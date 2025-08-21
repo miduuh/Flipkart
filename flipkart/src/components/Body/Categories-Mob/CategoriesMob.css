@@ -1,0 +1,53 @@
+@media screen and (min-width: 1024px) {
+    .categoriesMob{
+        display: none;
+    }
+}
+.categoriesMob{
+    background-color: #fff;
+}
+.cat-rows{
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    scrollbar-width: none;
+    padding: 12px 0 4px 8px;
+}
+.cat-1row{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin-bottom: 8px;
+}
+.fk-minutes{
+    display: flex;
+    flex-direction: column;
+}
+.f-minut{
+    height: 100%;
+    width: 152px;
+    display: flex;
+    justify-content: center;
+}
+.f-minutes{
+    width: 136.58px;
+    height: 58.28px;
+}
+.fk-min-txt{
+    font-size: 10px;
+    margin-top: 6px;
+    text-align: center;
+    font-family: var(--int-semi);
+    line-height: 14px;
+}
+.mob-cat{
+    align-items: stretch;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.mob-img{
+    display: flex;
+    width: 76px;
+    justify-content: center;
+}

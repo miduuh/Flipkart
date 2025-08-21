@@ -1,0 +1,25 @@
+.prod-scroll{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+.prod8{
+    margin: 12px 16px 0;
+    display: flex;
+    overflow: hidden;
+}
+.product8{  
+    width: 100%;
+    margin: auto;
+    object-fit: cover;
+    aspect-ratio: 41 / 20;
+    filter: none;
+    opacity: 1;
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    border-radius: 16px;
+}

@@ -1,0 +1,24 @@
+{
+    "banners": [
+        {
+            "src" : "src/assets/BannerProducts/big-banner2.jpg",
+            "alt" : "Image1"
+        },
+        {
+            "src" : "src/assets/BannerProducts/big-banner3.jpg",
+            "alt" : "Image2"
+        },
+        {
+            "src" : "src/assets/BannerProducts/big-banner4.jpg",
+            "alt" : "Image3"
+        },
+        {
+            "src" : "src/assets/BannerProducts/big-banner5.jpg",
+            "alt" : "Image4"
+        },
+        {
+            "src" : "src/assets/BannerProducts/big-banner6.jpg",
+            "alt" : "Image5"
+        }
+    ]
+}

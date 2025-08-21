@@ -1,0 +1,72 @@
+@media screen and (max-width:1024px) {
+    /* .electronics{
+        display: none !important;
+    } */
+}
+.electronics{
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 16px;
+}
+.electr{
+     grid-column: 1/11;   
+    background-color: #fff;
+    position: relative;
+}
+.electr-head{
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: -.02px;
+    font-family: var(--int-semi);
+    padding: 16px;
+}
+.items{
+    display: flex;
+    padding: 0 4px 12px;
+    overflow: hidden;
+}
+.item1{
+    padding: 12px 24px;
+    width: 216px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item-img:hover{
+    transform: scale(1.05);
+}
+.desc-txt{
+    width: 152px;
+    padding-top: 12px;
+}
+.description{
+    font-family: var(--int-reg);
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -.01px;
+    overflow-wrap: normal;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.offer{
+    font-family: var(--int-semi);
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -.01px;
+    overflow-wrap: normal;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.travel{
+    grid-column: 11/13;
+    background-color: #fff;
+}

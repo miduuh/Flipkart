@@ -1,0 +1,135 @@
+@media screen and (min-width: 1024px) {
+    .ccc{
+        display: none;
+    }
+}
+@media screen and (max-width: 1191px) {
+    .arrowleft, .arrowright{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 1024px) {
+    .bbb{
+        display: none;
+    }
+}
+.cImage0{
+    width: 100%;
+    object-fit: cover;
+    filter: none;
+    opacity: 1;
+    border-radius: 16px;
+    scroll-snap-align: start;
+    flex: 0 0 100%;
+}
+.bImage{
+    width: 100%;
+    object-fit: cover;
+    filter: none;
+    opacity: 1;
+    scroll-snap-align: start;
+    flex: 0 0 100%;
+}
+.cImage0-hidden{
+    display: none;
+}
+.cImages{
+    margin: 12px 16px 0;
+    display: flex;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    /* transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out; */
+    scrollbar-width: none;
+}
+.bImages{
+    display: flex;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    scrollbar-width: none;
+}
+.cImage-scroll{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    scrollbar-width: none;
+    background-color: #fff;
+} 
+.bImage-scroll{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    scrollbar-width: none;
+    position: relative;
+}
+
+
+.indicators{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    background-color: #fff;
+    
+}
+.indicator{
+    background-color: #000;
+    height: 4px;
+    width: 48px;
+    border-radius: 2px;
+    margin-inline: 4px;
+}
+.indicator-inactive{
+    background-color: rgba(0, 0, 0, 0.13);
+    width: 12px;
+}
+
+.arrow{
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: scale(1) translateY(-50%);
+}
+.arrow::before{
+    transform: rotate(225deg);
+    content: "";
+    position: relative;
+    border-color: #878787;
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+}
+.right-arw{
+    transform: translateY(-50%) rotate(180deg);
+}
+.arrowleft{
+    width: 40px;
+    background-color: #fff;
+    height: 88px;
+    position: absolute;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,.12);
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.arrowright{
+    width: 40px;
+    background-color: #fff;
+    height: 88px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    border-radius:  4px 0 0 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.12);
+}
