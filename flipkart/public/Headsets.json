@@ -1,0 +1,82 @@
+{
+    "headsets":[
+        {
+            "id":1,
+            "src": "/src/assets/headset/triggr-green.jpeg",
+            "isSponsored": true,
+            "name": "TRIGGR",
+            "description":"Kraken X1 with Battery Display, 40ms Latency, Quad Mic ENC, 40 Hr, v5.3 Bluetooth Headset",
+            "discountPercentage":"80",
+            "actualPrice":"3,999",
+            "discountPrice":"799",
+            "bankOffer":"759",
+            "rating":4,
+            "isAssured":true
+        },
+        {
+            "id":2,
+            "src": "/src/assets/headset/boat-black.jpeg",
+            "isSponsored": true,
+            "name": "boAt",
+            "description":"Airpodes 91 Bluetooth Headset",
+            "discountPercentage":"82",
+            "actualPrice":"4,990",
+            "discountPrice":"889",
+            "bankOffer":"884",
+            "rating":4.3,
+            "isAssured":true
+        },
+        {
+            "id":3,
+            "src": "/src/assets/headset/xo6-gaming-earbuds.jpeg",
+            "isSponsored": false,
+            "name": "HOPPUP",
+            "description":"Xo6 Gaming Earbuds with 35MS Low Latency, RGB LED, 13MM DRIVERS & 50H PlayTime Bluetooth Headset",
+            "discountPercentage":"84",
+            "actualPrice":"4,999",
+            "discountPrice":"797",
+            "bankOffer":"757",
+            "rating":4.3,
+            "isAssured":true
+        },
+        {
+            "id":4,
+            "src": "/src/assets/headset/kraken-x4.jpeg",
+            "isSponsored": false,
+            "name": "TRIGGR",
+            "description":"Kraken X4 with 13mm Drivers, 40ms Latency, ENC, 60H Battery, Rubber Finish, v5.4 Bluetooth Headset",
+            "discountPercentage":"80",
+            "actualPrice":"3,999",
+            "discountPrice":"799",
+            "bankOffer":"759",
+            "rating":4,
+            "isAssured":true
+        },
+        {
+            "id":5,
+            "src": "/src/assets/headset/realme.jpeg",
+            "isSponsored": false,
+            "name": "realme",
+            "description":"Buds Air7 with 52dB ANC, 12.4mm Driver, 52hrs Playback, IP55 & 45ms Low Latency Bluetooth Headset",
+            "discountPercentage":"34",
+            "actualPrice":"4,999",
+            "discountPrice":"3,299",
+            "bankOffer":"3,134",
+            "rating":4.5,
+            "isAssured":true
+        },
+        {
+            "id":6,
+            "src": "/src/assets/headset/mivi.jpeg",
+            "isSponsored": false,
+            "name": "Mivi",
+            "description":"Superpods Opera, 60Hrs PT, Spatial Audio, Hi-Res & LDAC, 3D HD Audio, Fast Chg. Bluetooth Headset",
+            "discountPercentage":"75",
+            "actualPrice":"5,999",
+            "discountPrice":"1,499",
+            "bankOffer":"1,424",
+            "rating":4,
+            "isAssured":true
+        }
+    ]
+}

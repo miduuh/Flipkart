@@ -1,6 +1,7 @@
 .headset-div{
-    display: flex;
+    display: grid;
     width: auto;
+    grid-template-columns: repeat(2,1fr);
 }
 .headset1{
     min-height: 216px;
@@ -9,6 +10,7 @@
 .headset-img{
     display: flex;
     width: 50vw;
+    transform: scale(0.9);
 }
 .product-description{
     padding: 4px 4px 8px 12px;

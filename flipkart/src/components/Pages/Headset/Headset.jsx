@@ -9,11 +9,13 @@ import ProductSection from "./ProductSection/ProductSection";
 const Headset = () => {
   return (
     <div>
-      <Head/>
-      <SortFilter/>
-      <Features/>
-      <Description/>
-      <ProductSection/>
+      <div className="headset-1023">
+        <Head/>
+        <SortFilter/>
+        <Features/>
+        <Description/>
+        <ProductSection/>
+      </div>
     </div>
   );
 };

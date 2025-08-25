@@ -8,7 +8,7 @@ export class Home extends Component {
       <div style={{backgroundColor: "#e4e2e264"}}>
         <Header/>
         <Body/>
-      </div> 
+      </div>
     )
   }
 }
