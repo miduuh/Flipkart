@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SortFilter.css";
+import Sort from "./Sort/Sort";
 
 const SortFilter = () => {
+  const [isVisible, setIsVisible] = useState(false)
+
+  const handleClick = () => {
+    setIsVisible(!isVisible)
+  }
   return (
     <div>
       <div className="sort-border">
         <div className="sort-filter">
-          <div className="sort">
+          <div className="sort" onClick={handleClick}>
             <svg width="20" height="20" viewBox="0 0 256 256">
               <path fill="none" d="M0 0h256v256H0z"></path>
               <path
@@ -72,6 +78,7 @@ const SortFilter = () => {
           </div>
         </div>
       </div>
+      <Sort isVisible={isVisible} handleClick={handleClick}/>
     </div>
   );
 };

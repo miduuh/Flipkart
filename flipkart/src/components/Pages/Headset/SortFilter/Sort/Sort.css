@@ -1,0 +1,49 @@
+.bg-black{
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.5;
+}
+.classify{
+    padding-bottom: 24px;
+    position: absolute;
+    height: fit-content;
+    inset: 0;
+    transform: translateY(648px) translateX(0);
+    will-change: transform;
+    z-index: 1;
+    background-color: #fff;
+    overflow: hidden;
+}
+.sort-by{
+    color: rgba(135, 135, 135, 1);
+    font-size: 14px;
+    font-family: var(--robo-reg);
+    margin: 12px;
+}
+.sort-ul{
+    height: 1px;
+    margin-bottom: 12px;
+    background-color: rgb(234, 234, 234);
+}
+.classification{
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.popularity{
+    font-size: 14px;
+    padding: 6px 12px;
+    flex-grow: 1;
+}
+.radio-button{
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: flex-end;
+
+}
