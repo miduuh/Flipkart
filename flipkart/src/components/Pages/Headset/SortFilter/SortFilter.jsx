@@ -9,7 +9,7 @@ const SortFilter = () => {
     setIsVisible(!isVisible)
   }
   return (
-    <div>
+    <div className="sortFilter">
       <div className="sort-border">
         <div className="sort-filter">
           <div className="sort" onClick={handleClick}>

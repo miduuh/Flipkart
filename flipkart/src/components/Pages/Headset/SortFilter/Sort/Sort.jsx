@@ -9,10 +9,8 @@ const Sort = ({ isVisible, handleClick }) => {
     document.body.style.overflowY = "scroll";
   }
 
-  const {setSortType} = useSort()
+  const { sortType, setSortType} = useSort()
 
-  
-//   return sortedData
   return (
     <div
       style={isVisible ? { visibility: "visible" } : { visibility: "hidden" }}
@@ -22,31 +20,31 @@ const Sort = ({ isVisible, handleClick }) => {
         <div className="sort-by">SORT BY</div>
         <div className="sort-ul"></div>
         <div>
-          <div className="classification" onClick={setSortType("popularity")}>
+          <div className="classification" onClick={()=>setSortType("popularity")}>
             <div className="popularity">Popularity</div>
             <div className="radio-button">
               <img src="src/assets/headset/radio-button.png" alt="" />
             </div>
           </div>
-          <div className="classification" onClick={setSortType("lowToHigh")}>
+          <div className="classification" onClick={()=>setSortType("lowToHigh")}>
             <div className="popularity">Price -- Low to High</div>
             <div className="radio-button">
               <img src="src/assets/headset/radio-button-unchecked.png" alt="" />
             </div>
           </div>
-          <div className="classification" onClick={setSortType("highToLow")}>
+          <div className="classification" onClick={()=>setSortType("highToLow")}>
             <div className="popularity">Price -- High to Low</div>
             <div className="radio-button">
               <img src="src/assets/headset/radio-button-unchecked.png" alt="" />
             </div>
           </div>
-          <div className="classification" onClick={setSortType("newest")}>
+          <div className="classification" onClick={()=>setSortType("newest")}>
             <div className="popularity">Newest First</div>
             <div className="radio-button">
               <img src="src/assets/headset/radio-button-unchecked.png" alt="" /> 
             </div>
           </div>
-          <div className="classification" onClick={setSortType("discount")}>
+          <div className="classification" onClick={()=>setSortType("discount")}>
             <div className="popularity">Discount</div>
             <div className="radio-button">
               <img src="src/assets/headset/radio-button-unchecked.png" alt="" />

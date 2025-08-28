@@ -3,7 +3,7 @@
         {
             "id":1,
             "src": "/src/assets/headset/triggr-green.jpeg",
-            "isSponsored": true,
+            "isSponsored": false,
             "name": "TRIGGR",
             "description":"Kraken X1 with Battery Display, 40ms Latency, Quad Mic ENC, 40 Hr, v5.3 Bluetooth Headset",
             "discountPercentage":"80",
@@ -16,7 +16,7 @@
         {
             "id":2,
             "src": "/src/assets/headset/boat-black.jpeg",
-            "isSponsored": true,
+            "isSponsored": false,
             "name": "boAt",
             "description":"Airpodes 91 Bluetooth Headset",
             "discountPercentage":"82",
