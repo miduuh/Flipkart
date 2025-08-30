@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 
-const DrawStar = (totalStars = 5, rating) => {
+const DrawStar = ({totalStars = 5, rating}) => {
   const canvasRef = useRef(null);
 
   const drawStar = (
@@ -68,7 +68,9 @@ const DrawStar = (totalStars = 5, rating) => {
     <div className="rating">
       <div className="canvas">
         <canvas
-          style={{ width: "120px", height: "40px" }}
+        width={totalStars * 55}
+        height={120}
+          style={{ width: "80px", height: "35px" }} 
           ref={canvasRef}
         ></canvas>
       </div>

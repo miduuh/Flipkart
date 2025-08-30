@@ -12,10 +12,10 @@ const Sort = ({ isVisible, handleClick }) => {
   const { sortType, setSortType} = useSort()
 
   return (
-    <div
+    <div onClick={handleClick}
       style={isVisible ? { visibility: "visible" } : { visibility: "hidden" }}
     >
-      <div className="bg-black" onClick={handleClick}></div>
+      <div className="bg-black"></div>
       <div className="classify">
         <div className="sort-by">SORT BY</div>
         <div className="sort-ul"></div>

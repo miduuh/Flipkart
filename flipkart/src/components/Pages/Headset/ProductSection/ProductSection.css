@@ -76,11 +76,11 @@
     display: flex;
     flex-direction: row;
     position: relative;
+    align-items: center;
 }
 .f-assured{
-    position: absolute;
+    position: relative;
     width: 60px;
     height: 16px;
-    left: 86px;
-    top: 8px;
+    top: -4px;
 }

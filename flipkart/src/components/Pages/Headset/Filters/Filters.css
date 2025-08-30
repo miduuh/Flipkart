@@ -1,0 +1,54 @@
+.filter-head {
+  display: flex;
+  font-family: var(--robo-reg);
+  font-weight: 400;
+  height: 52px;
+  align-items: center;
+  width: 100%;
+  padding-left: 12px;
+}
+.filter-head-txt {
+  width: 75px;
+  font-size: 13px;
+  display: inline-block;
+  line-height: 12px;
+  right: 12px;
+  position: absolute;
+}
+.apply-filter {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 56px;
+}
+.apply-div {
+  display: flex;
+  align-items: center;
+  margin: 8px 8px 8px 16px;
+}
+.count-div {
+  flex: 1 1 0;
+}
+.filter-count {
+  font-size: 12px;
+  color: rgb(135, 135, 135);
+}
+.aply-but {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  padding-left: 65px;
+  padding-right: 68.5px;
+  white-space: pre-wrap;
+}
+.apply-button {
+  min-height: 40px;
+  background-color: rgb(255, 88, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 2px;
+  display: flex;
+}
+.options{
+  
+}

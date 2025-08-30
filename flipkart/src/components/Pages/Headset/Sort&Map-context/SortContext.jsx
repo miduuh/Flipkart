@@ -3,7 +3,6 @@ import { createContext, useContext, useState, useEffect } from "react";
 const sortContext = createContext();
 
 export default function SortContext({ children }) {
-
   const [headset, setHeadset] = useState([]);
 
   useEffect(() => {
@@ -11,22 +10,20 @@ export default function SortContext({ children }) {
       try {
         const response = await fetch("/Headsets.json");
         const data = await response.json();
-        setHeadset(data.headsets)
+        setHeadset(data.headsets);
       } catch (error) {
         console.log("error fetching data:", error);
       }
-    }
-   fetchData()
-  },[]);
+    };
+    fetchData();
+  }, []);
 
   const [sortType, setSortType] = useState("popularity");
 
   const getSortedData = () => {
     const sortedData = [...headset].sort((a, b) => {
-      console.log('a',a,"b",b)
-      const priceA = a.discountPrice.replace(/,/g,'')
-      const priceB = b.discountPrice.replace(/,/g,'')
-      console.log(priceA)
+      const priceA = a.discountPrice.replace(/,/g, "");
+      const priceB = b.discountPrice.replace(/,/g, "");
       if (sortType === "popularity") return b.rating - a.rating;
       if (sortType === "lowToHigh") return priceA - priceB;
       if (sortType === "highToLow") return priceB - priceA;
@@ -38,10 +35,10 @@ export default function SortContext({ children }) {
     return sortedData;
   };
 
-  
-
   return (
-    <sortContext.Provider value={{ sortType, setSortType, getSortedData, headset }}>
+    <sortContext.Provider
+      value={{ sortType, setSortType, getSortedData, headset }}
+    >
       {children}
     </sortContext.Provider>
   );
