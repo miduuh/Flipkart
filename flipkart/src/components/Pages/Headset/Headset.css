@@ -1,8 +1,3 @@
-@media screen and (min-width:1023px) {
-    .headset-1023{
-        display: none;
-    }
-}
 .headset-head{
     min-height: 52px;
     display: table;

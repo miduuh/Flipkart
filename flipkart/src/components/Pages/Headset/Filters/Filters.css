@@ -21,6 +21,7 @@
   right: 0;
   left: 0;
   height: 56px;
+  background-color: #fff;
 }
 .apply-div {
   display: flex;
@@ -48,4 +49,41 @@
   color: rgb(255, 255, 255);
   border-radius: 2px;
   display: flex;
+}
+.filter-category-options{
+  height:798px;
+  overflow:scroll;
+  font-family:var(--robo-reg);
+  font-size: 14px;
+}
+.filter-categories{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(241, 243, 246);
+  max-width: 142px;
+  overflow: scroll;
+}
+.options-div{
+  height: 56px;
+}
+.options{
+  padding: 12px 16px;
+  align-items: center;
+  line-height: 20px;
+}
+.category-options{
+  position: absolute;
+  left: 142px;
+  top: 52px;
+}
+.ctgry-optn{
+  display: flex;
+  padding: 12px 19px;
+  line-height: 20px;
+  height: 48px;
+}
+.unchecked{
+  width: 18px;
+  height: 18px;
+  margin-right: 19px;
 }

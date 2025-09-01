@@ -23,31 +23,31 @@ const Sort = ({ isVisible, handleClick }) => {
           <div className="classification" onClick={()=>setSortType("popularity")}>
             <div className="popularity">Popularity</div>
             <div className="radio-button">
-              <img src="src/assets/headset/radio-button.png" alt="" />
+              <img src={ sortType === "popularity" ? "src/assets/headset/selcted.png" : "src/assets/headset/deselected.png"} alt="" />
             </div>
           </div>
           <div className="classification" onClick={()=>setSortType("lowToHigh")}>
             <div className="popularity">Price -- Low to High</div>
             <div className="radio-button">
-              <img src="src/assets/headset/radio-button-unchecked.png" alt="" />
+              <img src={ sortType === "lowToHigh" ? "src/assets/headset/selcted.png" : "src/assets/headset/deselected.png"} alt="" />
             </div>
           </div>
           <div className="classification" onClick={()=>setSortType("highToLow")}>
             <div className="popularity">Price -- High to Low</div>
             <div className="radio-button">
-              <img src="src/assets/headset/radio-button-unchecked.png" alt="" />
+              <img src={ sortType === "highToLow" ? "src/assets/headset/selcted.png" : "src/assets/headset/deselected.png"} alt="" />
             </div>
           </div>
           <div className="classification" onClick={()=>setSortType("newest")}>
             <div className="popularity">Newest First</div>
             <div className="radio-button">
-              <img src="src/assets/headset/radio-button-unchecked.png" alt="" /> 
+              <img src={ sortType === "newest" ? "src/assets/headset/selcted.png" : "src/assets/headset/deselected.png"} alt="" /> 
             </div>
           </div>
           <div className="classification" onClick={()=>setSortType("discount")}>
             <div className="popularity">Discount</div>
             <div className="radio-button">
-              <img src="src/assets/headset/radio-button-unchecked.png" alt="" />
+              <img src={ sortType === "discount" ? "src/assets/headset/selcted.png" : "src/assets/headset/deselected.png"} alt="" />
             </div>
           </div>
         </div>

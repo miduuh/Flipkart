@@ -28,7 +28,7 @@
         },
         {
             "id":3,
-            "src": "/src/assets/headset/xo6-gaming-earbuds.jpeg",
+            "src": "https://rukminim1.flixcart.com/image/426/510/xif0q/headphone/r/k/p/xo6-gaming-earbuds-with-35ms-low-latency-rgb-led-13mm-drivers-original-imahfayb8x85j7kv.jpeg?q=90&crop=false",
             "isSponsored": false,
             "name": "HOPPUP",
             "description":"Xo6 Gaming Earbuds with 35MS Low Latency, RGB LED, 13MM DRIVERS & 50H PlayTime Bluetooth Headset",
@@ -41,7 +41,7 @@
         },
         {
             "id":4,
-            "src": "/src/assets/headset/kraken-x4.jpeg",
+            "src": "https://rukminim1.flixcart.com/image/426/510/xif0q/headphone/f/r/a/-original-imahddx9w7dsbg9s.jpeg?q=90&crop=false",
             "isSponsored": false,
             "name": "TRIGGR",
             "description":"Kraken X4 with 13mm Drivers, 40ms Latency, ENC, 60H Battery, Rubber Finish, v5.4 Bluetooth Headset",
@@ -54,7 +54,7 @@
         },
         {
             "id":5,
-            "src": "/src/assets/headset/realme.jpeg",
+            "src": "https://rukminim1.flixcart.com/image/426/510/xif0q/headphone/m/c/r/-original-imahbprcjevftdpr.jpeg?q=90&crop=false",
             "isSponsored": false,
             "name": "realme",
             "description":"Buds Air7 with 52dB ANC, 12.4mm Driver, 52hrs Playback, IP55 & 45ms Low Latency Bluetooth Headset",
@@ -67,7 +67,7 @@
         },
         {
             "id":6,
-            "src": "/src/assets/headset/mivi.jpeg",
+            "src": "https://rukminim1.flixcart.com/image/426/510/xif0q/headphone/z/u/k/-original-imagsgggy5qguq6d.jpeg?q=90&crop=false",
             "isSponsored": false,
             "name": "Mivi",
             "description":"Superpods Opera, 60Hrs PT, Spatial Audio, Hi-Res & LDAC, 3D HD Audio, Fast Chg. Bluetooth Headset",
@@ -77,6 +77,37 @@
             "bankOffer":"1,424",
             "rating":4,
             "isAssured":true
+        }
+    ],
+
+    "filters":[
+        {
+            "mainFilter": "Brand",
+            "subFilter" : ["boAt", "OnePlus","realme", "SONY", "CMF by Nothing","JBL", "Skullcandy","Marshall","Bose","Noise"]
+        },
+        {
+            "mainFilter": "Connectivity",
+            "subFilter" : ["Bluetooth", "Bluetooth & Wired"]
+        },
+        {
+            "mainFilter": "Color",
+            "subFilter" : ["Black", "Pink","Blue","Red","White"]
+        },
+        {
+            "mainFilter": "Price",
+            "subFilter" : ["Rs. 600 and below", "Rs. 601 to Rs. 1000", "Rs. 1001 to Rs. 1500", "Rs. 1501 to Rs. 2000", "Rs. 2001 to Rs. 2600", "Rs. 2601 to Rs. 4000", "Rs. 4001 to Rs. 7000", "Rs. 7001 to Rs. 10000", "Rs. 10001 and above"]
+        },
+        {
+            "mainFilter": "Discount",
+            "subFilter" : ["50% or more", "40% or more","30% or more","20% or more","10% or more"]
+        },
+        {
+            "mainFilter": "Features",
+            "subFilter" : ["Noise Cancellation", "Fast Charging","Deep Bass","Water Resistant","FlatWire","FoldableCollapsible","Sweat Proof","True Wireless"]
+        },
+        {
+            "mainFilter": "Headphone Type",
+            "subFilter" : ["True Wireless", "On the Ear","In the Ear"]
         }
     ]
 }
