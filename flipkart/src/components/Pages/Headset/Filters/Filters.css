@@ -75,6 +75,10 @@
   position: absolute;
   left: 142px;
   top: 52px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 798px;
+  width: 100%;
 }
 .ctgry-optn{
   display: flex;

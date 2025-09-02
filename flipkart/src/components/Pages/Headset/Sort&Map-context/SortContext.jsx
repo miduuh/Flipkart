@@ -4,6 +4,7 @@ const sortContext = createContext();
 
 export default function SortContext({ children }) {
   const [headset, setHeadset] = useState([]);
+  const [filter, setFilter] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -11,6 +12,7 @@ export default function SortContext({ children }) {
         const response = await fetch("/Headsets.json");
         const data = await response.json();
         setHeadset(data.headsets);
+        setFilter(data.filters);
       } catch (error) {
         console.log("error fetching data:", error);
       }
@@ -37,7 +39,7 @@ export default function SortContext({ children }) {
 
   return (
     <sortContext.Provider
-      value={{ sortType, setSortType, getSortedData, headset }}
+      value={{ sortType, setSortType, getSortedData, headset, filter }}
     >
       {children}
     </sortContext.Provider>
