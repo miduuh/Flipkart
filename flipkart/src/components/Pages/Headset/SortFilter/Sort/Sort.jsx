@@ -1,6 +1,7 @@
-import React, { createContext, useState } from "react";
 import "./Sort.css";
 import { useSort } from "../../Sort&Map-context/SortContext";
+import selectedImg from "../../../../../assets/headset/selcted.png";
+import unselected from "../../../../../assets/headset/deselected.png";
 
 const Sort = ({ isVisible, handleClick }) => {
   if (isVisible == true) {
@@ -9,10 +10,11 @@ const Sort = ({ isVisible, handleClick }) => {
     document.body.style.overflowY = "scroll";
   }
 
-  const { sortType, setSortType} = useSort()
+  const { sortType, setSortType } = useSort();
 
   return (
-    <div onClick={handleClick}
+    <div
+      onClick={handleClick}
       style={isVisible ? { visibility: "visible" } : { visibility: "hidden" }}
     >
       <div className="bg-black"></div>
@@ -20,42 +22,67 @@ const Sort = ({ isVisible, handleClick }) => {
         <div className="sort-by">SORT BY</div>
         <div className="sort-ul"></div>
         <div>
-          <div className="classification" onClick={()=>setSortType("popularity")}>
+          <div
+            className="classification"
+            onClick={() => setSortType("popularity")}
+          >
             <div className="popularity">Popularity</div>
             <div className="radio-button">
-              <img src={ sortType === "popularity" ? "src/assets/headset/selcted.png" : "src/assets/headset/deselected.png"} alt="" />
+              <img
+                src={sortType === "popularity" ? selectedImg : unselected}
+                alt=""
+              />
             </div>
           </div>
-          <div className="classification" onClick={()=>setSortType("lowToHigh")}>
+          <div
+            className="classification"
+            onClick={() => setSortType("lowToHigh")}
+          >
             <div className="popularity">Price -- Low to High</div>
             <div className="radio-button">
-              <img src={ sortType === "lowToHigh" ? "src/assets/headset/selcted.png" : "src/assets/headset/deselected.png"} alt="" />
+              <img
+                src={sortType === "lowToHigh" ? selectedImg : unselected}
+                alt=""
+              />
             </div>
           </div>
-          <div className="classification" onClick={()=>setSortType("highToLow")}>
+          <div
+            className="classification"
+            onClick={() => setSortType("highToLow")}
+          >
             <div className="popularity">Price -- High to Low</div>
             <div className="radio-button">
-              <img src={ sortType === "highToLow" ? "src/assets/headset/selcted.png" : "src/assets/headset/deselected.png"} alt="" />
+              <img
+                src={sortType === "highToLow" ? selectedImg : unselected}
+                alt=""
+              />
             </div>
           </div>
-          <div className="classification" onClick={()=>setSortType("newest")}>
+          <div className="classification" onClick={() => setSortType("newest")}>
             <div className="popularity">Newest First</div>
             <div className="radio-button">
-              <img src={ sortType === "newest" ? "src/assets/headset/selcted.png" : "src/assets/headset/deselected.png"} alt="" /> 
+              <img
+                src={sortType === "newest" ? selectedImg : unselected}
+                alt=""
+              />
             </div>
           </div>
-          <div className="classification" onClick={()=>setSortType("discount")}>
+          <div
+            className="classification"
+            onClick={() => setSortType("discount")}
+          >
             <div className="popularity">Discount</div>
             <div className="radio-button">
-              <img src={ sortType === "discount" ? "src/assets/headset/selcted.png" : "src/assets/headset/deselected.png"} alt="" />
+              <img
+                src={sortType === "discount" ? selectedImg : unselected}
+                alt=""
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-
 };
-
 
 export default Sort;

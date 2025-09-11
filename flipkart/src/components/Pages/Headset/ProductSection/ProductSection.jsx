@@ -4,15 +4,13 @@ import DrawStar from "./DrawStar";
 import { useSort } from "../Sort&Map-context/SortContext";
 
 const ProductSection = () => {
-  const { getSortedData } = useSort();
-
-  const sortedData = getSortedData();
+  const { product } = useSort();
 
   return (
     <div>
       <div className="headset-div">
-        {sortedData.length > 0 &&
-          sortedData?.map((item, index) => {
+        {product?.length > 0 &&
+          product?.map((item, index) => {
             return (
               <div className="headset1" key={index}>
                 <div className="headset-img">
@@ -22,7 +20,7 @@ const ProductSection = () => {
                   <div className="sponsored">
                     {item.isSponsored ? "Sponsored" : ""}
                   </div>
-                  <div className="headset-name">{item.name}</div>
+                  <div className="headset-name">{item.brand}</div>
                   <div className="headset-description">{item.description}</div>
                   <div className="prices">
                     <div className="discount-percentage">

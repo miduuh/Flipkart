@@ -9,19 +9,13 @@ import SortContext from "./components/Pages/Headset/Sort&Map-context/SortContext
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="search" element={<SearchPage />} />
-        <Route path="headset" element={<Headset />} />
-        <Route
-          path="headset/filter"
-          element={
-            <SortContext>
-              <Filters />
-            </SortContext>
-          }
-        />
-      </Routes>
+      <SortContext>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="search" element={<SearchPage />} />
+          <Route path="headset" element={<Headset />} />
+        </Routes>
+      </SortContext>
     </>
   );
 }

@@ -2,12 +2,19 @@ import React, { useState } from "react";
 import "./SortFilter.css";
 import Sort from "./Sort/Sort";
 import { Link } from "react-router-dom";
+import Filters from "../Filters/Filters";
 
 const SortFilter = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [filterModal, setFilterModal] = useState(false);
+  const [filterVisible, setFilterVisible] = useState(false);
 
   const handleClick = () => {
     setIsVisible(!isVisible);
+  };
+
+  const handleModal = () => {
+    setFilterModal(!filterModal);
   };
   return (
     <div className="sortFilter">
@@ -30,58 +37,59 @@ const SortFilter = () => {
 
           <div className="mid-line"></div>
 
-          <Link to={"filter"} className="sort">
-            <div className="sort">
-              <div style={{ position: "relative", marginTop: "5px" }}>
-                <svg width="20" height="20" viewBox="0 0 256 256">
-                  <path fill="none" d="M0 0h256v256H0z"></path>
-                  <path
-                    fill="none"
-                    stroke="#111112"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="12"
-                    d="M148 172H40M216 172h-28"
-                  ></path>
-                  <circle
-                    cx="168"
-                    cy="172"
-                    r="20"
-                    fill="none"
-                    stroke="#111112"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="12"
-                  ></circle>
-                  <path
-                    fill="none"
-                    stroke="#111112"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="12"
-                    d="M84 84H40M216 84h-92"
-                  ></path>
-                  <circle
-                    cx="104"
-                    cy="84"
-                    r="20"
-                    fill="none"
-                    stroke="#111112"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="12"
-                  ></circle>
-                </svg>
-                <div className="notify-div">
-                  <div className="notify-num">3</div>
-                </div>
+          <div className="sort" onClick={handleModal}>
+            <div style={{ position: "relative", marginTop: "5px" }}>
+              <svg width="20" height="20" viewBox="0 0 256 256">
+                <path fill="none" d="M0 0h256v256H0z"></path>
+                <path
+                  fill="none"
+                  stroke="#111112"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="12"
+                  d="M148 172H40M216 172h-28"
+                ></path>
+                <circle
+                  cx="168"
+                  cy="172"
+                  r="20"
+                  fill="none"
+                  stroke="#111112"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="12"
+                ></circle>
+                <path
+                  fill="none"
+                  stroke="#111112"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="12"
+                  d="M84 84H40M216 84h-92"
+                ></path>
+                <circle
+                  cx="104"
+                  cy="84"
+                  r="20"
+                  fill="none"
+                  stroke="#111112"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="12"
+                ></circle>
+              </svg>
+              <div className="notify-div">
+                <div className="notify-num">3</div>
               </div>
-              <div className="sort-txt">Filter</div>
             </div>
-          </Link>
+            <div className="sort-txt">Filter</div>
+          </div>
         </div>
       </div>
       <Sort isVisible={isVisible} handleClick={handleClick} />
+      {filterModal && (
+        <Filters filterVisible={filterModal} handleModal={handleModal} />
+      )}
     </div>
   );
 };

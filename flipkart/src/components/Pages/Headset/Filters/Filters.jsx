@@ -1,23 +1,22 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Filters.css";
-import { useNavigate } from "react-router-dom";
-import SortContext, { useSort } from "../Sort&Map-context/SortContext";
+import { useSort } from "../Sort&Map-context/SortContext";
 
-const Filters = () => {
-  const navigate = useNavigate();
+const Filters = ({ handleModal, filterVisible }) => {
+  if (filterVisible == true) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "scroll";
+  }
 
-  const goBack = () => {
-    navigate(-1);
-  };
-
-  const { filter } = useSort();
-
+  const { filter, checkedFilters, handleCheck, clearFilters, product } =
+    useSort();
   const [filterIndex, setFilterIndex] = useState(0);
 
   return (
-    <div>
+    <div className="filter-container">
       <div className="headset-head">
-        <div className="back-arrow" onClick={goBack}>
+        <div className="back-arrow" onClick={handleModal}>
           <svg
             width="19"
             height="16"
@@ -36,18 +35,26 @@ const Filters = () => {
         </div>
         <div className="filter-head">
           <span style={{ width: "100%" }}>Filters</span>
-          <span className="filter-head-txt">Clear Filters</span>
+          <span onClick={clearFilters} className="filter-head-txt">
+            Clear Filters
+          </span>
         </div>
       </div>
 
       <div className="apply-filter">
+        <div
+          style={{ height: "1px", backgroundColor: "rgba(135,135,135,0.2" }}
+        ></div>
         <div className="apply-div">
           <div className="count-div">
-            <div>3,134</div>
+            <div>{product.length}</div>
             <div className="filter-count">products found</div>
           </div>
+
           <div className="apply-button">
-            <div className="aply-but">Apply</div>
+            <div className="aply-but" onClick={handleModal}>
+              Apply
+            </div>
           </div>
         </div>
       </div>
@@ -60,6 +67,11 @@ const Filters = () => {
                 <div className="options-div" key={index}>
                   <div
                     onClick={() => setFilterIndex(index)}
+                    style={
+                      filterIndex === index
+                        ? { backgroundColor: "#fff", color: "#2874f0" }
+                        : {}
+                    }
                     className="options"
                   >
                     {item.mainFilter}
@@ -72,12 +84,23 @@ const Filters = () => {
         <div className="category-options">
           <div>
             {filter[filterIndex]?.subFilter.map((filt, index) => {
+              const main = filter[filterIndex].mainFilter;
+              const isChecked = checkedFilters[main]?.includes(filt || false);
+
               return (
-                <div className="ctgry-optn" key={index}>
+                <div
+                  className="ctgry-optn"
+                  key={index}
+                  onClick={() => handleCheck(main, filt)}
+                >
                   <img
                     className="unchecked"
-                    src="/src/assets/headset/unchecked.png"
-                    alt=""
+                    src={
+                      isChecked
+                        ? "/src/assets/headset/checked.png"
+                        : "/src/assets/headset/unchecked.png"
+                    }
+                    alt="Checkbox"
                   />
                   <div>{filt}</div>
                 </div>
