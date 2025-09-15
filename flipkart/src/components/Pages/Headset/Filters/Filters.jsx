@@ -85,7 +85,7 @@ const Filters = ({ handleModal, filterVisible }) => {
           <div>
             {filter[filterIndex]?.subFilter.map((filt, index) => {
               const main = filter[filterIndex].mainFilter;
-              const isChecked = checkedFilters[main]?.includes(filt || false);
+              const isChecked = checkedFilters[main]?.includes(typeof filt === "object" ? JSON.stringify(filt) : filt || false);
 
               return (
                 <div
@@ -102,7 +102,7 @@ const Filters = ({ handleModal, filterVisible }) => {
                     }
                     alt="Checkbox"
                   />
-                  <div>{filt}</div>
+                  <div>{typeof filt === "object" && !Array.isArray(filt) ? Object.keys(filt)[0] : filt}</div>
                 </div>
               );
             })}

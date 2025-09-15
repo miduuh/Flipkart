@@ -7,7 +7,6 @@ export default function SortContext({ children }) {
   const [filter, setFilter] = useState([]);
   const [product, setProduct] = useState([]);
   const [sortType, setSortType] = useState("popularity");
-  const [filtered, setFiltered] = useState([]);
 
   const [checkedFilters, setCheckedFilters] = useState({});
 
@@ -18,7 +17,6 @@ export default function SortContext({ children }) {
         const data = await response.json();
         setHeadset(data.headsets);
         setProduct(data.headsets);
-        setFiltered(data.headsets);
         setFilter(data.filters);
       } catch (error) {
         console.log("error fetching data:", error);
@@ -31,33 +29,48 @@ export default function SortContext({ children }) {
     setCheckedFilters((prev) => {
       const current = prev[mainFilter] || [];
 
-      const updated = current.includes(subFilter)
-        ? current.filter((item) => item !== subFilter)
-        : [...current, subFilter];
+      const subFilterKey = typeof subFilter === "object" ? JSON.stringify(subFilter) : subFilter
+
+      const updated = current.includes(subFilterKey)
+        ? current.filter((item) => item !== subFilterKey)
+        : [...current, subFilterKey];
 
       return { ...prev, [mainFilter]: updated };
     });
-  };
+    // const range = typeof checkedFilters === "object" && !Array.isArray(subFilter) ? Object.values(subFilter) : []
+    // console.log(range);
+    
+  };  
 
   const clearFilters = () => setCheckedFilters({});
 
   const filterApply = () => {
     const filteredProducts = headset.filter((headset) => {
-      const price = Number(headset.actualPrice.replace(/,/g, ""));
+      const price = Number(headset.discountPrice.replace(/,/g, ""));
+      console.log(price)
 
-      const brandOk =
+      const brandCheck =
         checkedFilters.Brand?.length === 0 ||
         checkedFilters.Brand?.includes(headset.brand);
 
       const fAssured = checkedFilters.fAssured?.length === 0 || checkedFilters.fAssured?.includes(headset.isAssured === true)
 
-      return brandOk || fAssured
+      const priceCheck = !checkedFilters.Price?.length || checkedFilters.Price?.some((subFilterString) => {
+        const obj = JSON.parse(subFilterString)
+        const key = Object.keys(obj)[0]
+        const [min, max] = obj[key]
+        return price >= min && price <= max
+      })
+
+      console.log(priceCheck)
+
+      return brandCheck && priceCheck
     });
     return filteredProducts;
   };
 
   const applySorting = (data) => {
-    const sortedData = [...data].sort((a, b) => {
+    const sortedData = data.sort((a, b) => {
       const priceA = a.discountPrice.replace(/,/g, "");
       const priceB = b.discountPrice.replace(/,/g, "");
       if (sortType === "popularity") return b.rating - a.rating;
@@ -86,7 +99,7 @@ export default function SortContext({ children }) {
         checkedFilters,
         handleCheck,
         clearFilters,
-        product,
+        product
       }}
     >
       {children}
